@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic Styles</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            margin: 10px;
+        }
+
+        #box1 { background-color: lightblue; }
+        #box2 { background-color: lightgreen; }
+        #box3 { background-color: lightcoral; }
+        #box4 { background-color: lightsalmon; }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <div id="box1" class="box">Box 1</div>
+    <div id="box2" class="box">Box 2</div>
+    <div id="box3" class="box">Box 3</div>
+    <div id="box4" class="box">Box 4</div>
+    <button id="resetButton"><a href="stylingWjavascript.html"></a>Reset Styles</button>
+
+    <script src="stylingWjavascript.js"></script>
+</body>
+</html>
